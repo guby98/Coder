@@ -1,0 +1,21 @@
+.card-body{
+  border: 1px solid black;
+  height: 20rem;
+  width: 18rem;
+  
+}
+
+.card-img{
+  width: 254px;
+  height: 200px;
+}
+
+.card-body:hover{
+    transition: 0.4s all ease;
+    transform: scale(1.05);
+}
+
+.card-body-inside{
+  text-align: center;
+  width: 16.25rem;
+}

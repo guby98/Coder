@@ -1,0 +1,22 @@
+.none{
+    text-decoration: none ; 
+    color: black;
+}
+
+.none:hover{
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: 2s all;
+}
+
+.nav-center{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.nav-head{
+    margin-bottom: 1%;
+}
+

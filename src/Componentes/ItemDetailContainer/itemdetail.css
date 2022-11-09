@@ -1,0 +1,8 @@
+.card-body{
+    height: 62vh;
+}
+
+.detail-all{
+    display: flex;
+    justify-content: center;
+}
