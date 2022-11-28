@@ -1,8 +1,30 @@
 .card-body{
-    height: 62vh;
+    height: 80vh;
+    border-radius: 1.8rem;
+    height: 100vh;
 }
 
 .detail-all{
     display: flex;
     justify-content: center;
+    background-color: wheat;
+    height: 100vh;
+}
+
+.store-cart{
+    margin-right: 20px;
+    
+}
+
+.card-img-detail{
+    width: 254px;
+    height: 200px;
+}
+
+.border-card{
+    border: 1px solid;
+}
+
+.viewheight{
+    height: 100vh;
 }

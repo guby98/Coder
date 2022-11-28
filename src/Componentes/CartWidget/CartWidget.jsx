@@ -1,16 +1,27 @@
 import '../CartWidget/cartwidget.css'
-import moto from '../../Assets/cart.png'
 
+import cartContext from '../Context/CartContext';
+import { useContext } from 'react';
+import {Link} from 'react-router-dom';
+import '../../App.css'
 
 function CartW() {
+
+    const { totalItemsInCart } = useContext(cartContext);
+    
     return (
-        <div>
-
-            <img src={moto} alt='cart' className='moto'>
-
-            </img>
-
-        </div>
+     <div>
+           <Link to = '/cart'>
+           <i class="fa fa-shopping-cart" style={{fontSize:'25px', color: 'white'}}></i> </Link>
+            
+            <small>
+            
+                { (totalItemsInCart() > 0)? 
+                <span className='counter'>  {totalItemsInCart()} </span> : <></> }
+                
+            </small>
+              
+    </div>
     );
 };
 

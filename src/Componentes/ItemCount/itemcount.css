@@ -1,0 +1,24 @@
+.count-container{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    text-align: center;
+}
+
+.count-buttons{
+    color: black;
+}
+
+.button-resta{
+    color: red;
+    margin-left: 1rem;
+}
+
+.button-suma{
+    color: green;
+}
+
+.addbtn{
+    border: groove 1px black;
+    margin-right: 1rem;
+}

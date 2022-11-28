@@ -1,21 +1,46 @@
 .card-body{
-  border: 1px solid black;
+  
   height: 20rem;
   width: 18rem;
-  
 }
 
 .card-img{
   width: 254px;
   height: 200px;
+  margin-bottom: 1%;
 }
 
-.card-body:hover{
-    transition: 0.4s all ease;
-    transform: scale(1.05);
-}
 
 .card-body-inside{
   text-align: center;
   width: 16.25rem;
+}
+
+.button1{
+  border-radius: 100px;
+  background: rgba(91, 5, 5, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.8px);
+  -webkit-backdrop-filter: blur(1.8px);
+}
+
+.button1:hover{
+  transition: 0.4s all ease;
+  transform: scale(1.05);
+}
+
+.card-img:hover{
+  transition: 0.30s all ease;
+  transform: scale(1.05);
+}
+
+.cardExterior{
+  border: 2px hidden black;
+  background: rgba(91, 5, 5, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.8px);
+  -webkit-backdrop-filter: blur(1.8px);
+  
 }

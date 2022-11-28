@@ -1,42 +1,34 @@
 import {React, useState, useEffect} from 'react';
-import { getSingleItemFromAPI} from '../Mock/MockService';
-import Card from 'react-bootstrap/Card';
-import Button from '../Button/Button';
+import { getSingleItemFromAPI } from "../../services/firebase";
 import '../ItemDetailContainer/itemdetail.css'
 import {useParams} from 'react-router-dom';
+import { Loader } from '../Loader/Loader';
+import ItemDetail from '../ItemDetailContainer/ItemDetail';
 
 function ItemDetailContainer(props) {
     const [product, setProduct] = useState([]);
+    const [ loading, setLoading] = useState(true);
 
     let id = useParams().id;
 
     useEffect(() => {
-      getSingleItemFromAPI(id).then((itemsDB) => {
-            setProduct(itemsDB);
-        });
-    }, []);
+      getSingleItemFromAPI(id)
+        .then((itemsDB) => {
+          setProduct(itemsDB);
+        })
+        .catch((error) => {
+          console.error(error);
+        })
+        .finally(() => setLoading(false));
+    }, [id]);
 
-    return <div className='detail-all'> 
-      <Card style={{ width: '18rem', height: '30rem', marginTop:'1rem' }}>
-      <Card.Body className='card-body'>
-      <img alt= 'product' className='card-img' src = {product.thumbnail} />
-      <Card.Title>{product.title}</Card.Title>
-      <Card.Subtitle className="mb-2 text-muted ">{product.subtitle}</Card.Subtitle>
-      <Card.Text>
-        {product.description}
-      </Card.Text>
-      <Card.Text>
-        {product.price}
-      </Card.Text>
-      
+    if (loading) return <Loader color = 'black' size = {250} lineWeight= {4}/>;
 
-      <Button color = 'blue' >Hola!</Button>
-      {/* <Card.Link href="#">Card Link</Card.Link>
-      <Card.Link href="#">Another Link</Card.Link> */}
-    </Card.Body>
-  </Card>
-  </div>
+    
+  let stylePrice = {color : product.discount? 'green' : 'inherit'};
+
+    return ( <ItemDetail  product= {product}  />)
 };
 
-export default ItemDetailContainer
+export default ItemDetailContainer;
 

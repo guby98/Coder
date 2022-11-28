@@ -2,5 +2,10 @@
     cursor: pointer;
 }
 .btn{
-    color:white;
+    color:black;
+    background-color: yellow;
+}
+
+.danger{
+    background-color: brown;
 }

@@ -4,25 +4,27 @@ import CartW from '../CartWidget/CartWidget.jsx'
 import { Link } from 'react-router-dom';
 
 function NavBar() {
-    return (
+
+   return (
         <div className='nav-head'>
+
            <Nav className="justify-content-evenly nav-center " >
+          
+          <Link className='none' to = '/' ><h5 > Shop </h5></Link>
+          
+         
+          <Link className='none' to = '/category/bmw'><h5 > BMW </h5></Link>
         
-          <Link className='none' to = '/' ><h5 className='none'> Shop </h5></Link>
         
-        
-          <Link to = '/category/bmw'><h5 className='none'> BMW </h5></Link>
-        
-        
-          <Link  to = '/category/honda'  ><h5 className='none'>HONDA</h5></Link>
+          <Link className='none'  to = '/category/honda'  ><h5 > HONDA </h5></Link>
 
 
-          <Link  to = '/category/kawasaki'  ><h5 className='none'>KAWASAKI</h5></Link>
+          <Link className='none'  to = '/category/kawasaki'  ><h5 > KAWASAKI </h5></Link>
         
         
-          {/* <Link   >
-          <h5 className='none'>Un poco de mí! </h5>
-          </Link> */}
+          <Link  className='none'to = '/cart'  >
+          <h5  to='/landing'>Cart</h5>
+          </Link>
         
         <CartW />
       </Nav>

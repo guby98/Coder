@@ -1,7 +1,126 @@
-.App {
+#App {
   text-align: center;
-  background-color: blanchedalmond;
-  min-height: 100%;
-
+  min-height: 100vh;
+  background-color: #e8f9fd !important;
 }
+
+.alignDetail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.margins{
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+
+img:hover{
+    cursor: pointer;
+}
+
+.colors{
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1%;
+}
+
+#day{
+  text-align: center;
+  transition: 1s ease;
+  background-color: wheat;
+}
+
+#night{
+  text-align: center;
+  transition: 1s ease;
+  background-color: rgb(87, 86, 69);
+}
+
+span{
+  color: black!important;
+}
+
+.notFound{
+  height: 100vh;
+  background-color: wheat;
+}
+
+.buttonDark{
+  border: 2px hidden black;
+  background: rgba(91, 5, 5, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.8px);
+  -webkit-backdrop-filter: blur(1.8px);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.emptyCart{
+  height: 100vh;
+}
+
+.linkDetail{
+  text-decoration: none;
+}
+
+.counter{
+  font-size:20px ;
+  color: white !important;
+}
+
+.tableData{
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  
+}
+
+.carth4{
+  margin-bottom: 2%;
+}
+
+.mapContent{
+  height: 41vh;
+  width: 100vw;
+}
+
+.notFoundLink{
+  text-decoration: none;
+}
+
+.card-body{
+  height: 80vh;
+  border-radius: 1.8rem;
+  height: 100vh;
+}
+
+.detail-all{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.store-cart{
+  margin-right: 20px;
+}
+
+.card-img-detail{
+  width: 254px;
+  height: 200px;
+}
+
+.border-card{
+  border: 1px solid;
+}
+
+.viewheight{
+  height: 100vh;
+  
+}
+
 

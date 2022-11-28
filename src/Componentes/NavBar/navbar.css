@@ -1,12 +1,6 @@
 .none{
     text-decoration: none ; 
-    color: black;
-}
-
-.none:hover{
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    transition: 2s all;
+    color: white
 }
 
 .nav-center{
@@ -14,9 +8,11 @@
     justify-content: space-evenly;
     margin-right: 10%;
     margin-left: 10%;
+    align-items: center;
 }
 
 .nav-head{
     margin-bottom: 1%;
+    background-color: black;
 }
 
