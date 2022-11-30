@@ -12,4 +12,4 @@ Se utilizó:
 
 -Íconos de font awesome
 
-Apretar ctrl+ñ y escribir npm start para iniciar el proyecto.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Apretar ctrl+ñ y escribir npm start para iniciar el proyecto
