@@ -8,7 +8,7 @@ export default function BuyForm(props) {
     phone: "",
   });
 
-  console.log(userData);
+  
 
   function onInputChange(evt) {
     const inputName = evt.target.name;
@@ -25,6 +25,10 @@ export default function BuyForm(props) {
   }
 
   return (
+    <div className='formColor'>
+
+      <h4 >Completa el formulario para terminar tu compra</h4>
+
     <form onSubmit={onSubmit}>
       <InputForm
         required={true}
@@ -57,5 +61,6 @@ export default function BuyForm(props) {
 
       <button onClick={onSubmit}>Crear orden</button>
     </form>
+    </div>
   );
 }

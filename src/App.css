@@ -75,9 +75,8 @@ span{
 
 .tableData{
   text-align: center;
-  width: 100px;
+  width: 150px;
   height: 100px;
-  
 }
 
 .carth4{
@@ -85,8 +84,8 @@ span{
 }
 
 .mapContent{
-  height: 41vh;
-  width: 100vw;
+  height: 35%;
+  width: 100%;
 }
 
 .notFoundLink{
@@ -121,6 +120,25 @@ span{
 .viewheight{
   height: 100vh;
   
+}
+
+.formStyle{
+  margin-top: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: wheat;
+  text-align: center;
+}
+
+.clearCart{
+  display: flex;
+  margin-left: 71.5%;
+}
+
+.formColor{
+  background-color: wheat;
+  height: 100vh;
 }
 
 

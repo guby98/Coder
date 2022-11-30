@@ -12,7 +12,7 @@ function CartW() {
     return (
      <div>
            <Link to = '/cart'>
-           <i class="fa fa-shopping-cart" style={{fontSize:'25px', color: 'white'}}></i> </Link>
+           <i className="fa fa-shopping-cart" style={{fontSize:'25px', color: 'white'}}></i> </Link>
             
             <small>
             
